@@ -1,0 +1,78 @@
+// http://browsenpm.org/package.json
+{
+	// The unique name of your package and should be down in lowercase. This property is required and your package will not install without it.
+	"name": "module-name",
+	// The version of the package is specified by Semantic Versioning. Which assumes that a version number is written as MAJOR.MINOR.PATCH and you increment the:
+		// MAJOR version when you make incompatible API changes
+		// MINOR version when you add functionality in a backwards-compatible manner
+		// PATCH version when you make backwards-compatible bug fixes
+	"version": "0.1.0",
+	// The description of the project. Try to keep it short and concise.
+	"description": "An example module to illustrate the usage of a package.json",
+	// The author of this package. Hopefully one day soon, it will be your name!
+	"author": "Your Name <you.name@example.org>",
+	// An array of objects representing contributors to the project. Each object in the array represents one contributor.
+	"contributors": [{
+		"name": "Foo Bar",
+		"email": "foo.bar@example.com"
+	}],
+	"license": "MIT",
+	// // A object which is used to expose binary scripts from your package. The object assumes that the key is the name of the binary script and the value a relative path to the script.
+	// "bin": {
+	// 	"module-name": "./bin/module-name"
+	// },
+	// // A object which exposes addition npm commands. The object assumes that the key is the npm command and the value is the script path. These scripts can get executed when you run npm run {command name} or npm run-script {command name}.
+	// "scripts": {
+	// 	"test": "vows --spec --isolate",
+	// 	"start": "node index.js",
+	// 	"predeploy": "echo im about to deploy",
+	// 	"postdeploy": "echo ive deployed",
+	// 	"prepublish": "coffee --bare --compile --output lib/foo src/foo/*.coffee",
+	// 	"update": "gem update sass && npm install && npm prune && bower install"
+	// },
+	// // A object which is used to expose binary scripts from your package. The object assumes that the key is the name of the binary script and the value a relative path to the script.
+	// "main": "lib/foo.js",
+	// // An object which is used to the specify the URL and type of source code repository. This is helpful for people who want to contribute to your module.
+	// "repository": {
+	// 	"type": "git",
+	// 	"url": "https://github.com/nodejitsu/browsenpm.org"
+	// },
+	// // The URL and/or email address where bugs should be reported.
+	// "bugs": {
+	// 	"url": "https://github.com/nodejitsu/browsenpm.org/issues"
+	// },
+	// // An Array of keywords which describe your package. This will help people find your package.
+	// "keywords": [
+	// 	"nodejitsu",
+	// 	"example",
+	// 	"browsenpm"
+	// ],
+	// // An object which contain the dependencies of your package. This will be automatically installed when people install your package. The key of the object is the name of the package and the value is a valid semver range.
+	// "dependencies": {
+	// 	"primus": "*",
+	// 	"async": "~0.8.0",
+	// 	"express": "4.2.x",
+	// 	"winston": "git://github.com/flatiron/winston#master",
+	// 	"bigpipe": "bigpipe/pagelet",
+	// 	"plates": "https://github.com/flatiron/plates/tarball/master"
+	// },
+	// // An object which contain the dependencies of your package. This will be automatically installed when people install your package. The key of the object is the name of the package and the value is a valid semver range.
+	// "devDependencies": {
+	// 	"vows": "^0.7.0",
+	// 	"assume": "<1.0.0 || >=2.3.1 <2.4.5 || >=2.5.2 <3.0.0",
+	// 	"pre-commit": "*"
+	// },
+	// // A property that indicates that this page prefers to be installed globally using npm install -g {module-name}. This property is used by packages that contain a CLI (command line interface). In all other situations you should NOT use this property.
+	// "preferGlobal": true,
+	// // By setting private to true, npm will refuse to publish it. This prevents accidental publishes to the public npm registry.
+	// "private": true,
+	// // The publishConfig is an object with configuration values that will be used for publishing modules. The configuration values that are set override your default npm configuration. The most common use of the publishConfig is to publish your package to a private npm registry so you still have the benifits of npm but for private packages. This is done by simply setting URL of your private npm as value for the registry key.
+	// "publishConfig": {
+	// 	"registry": "https://your-private-hosted-npm.registry.nodejitsu.com"
+	// },
+	// // Specifies the subdomain for your application. It should only include the subdomain not the root domain and is limited to one level.
+	// "subdomain": "foobar",
+	// // At Nodejitsu, we will automatically attempt to scan packages for missing dependencies, bugs, and syntax errors. If you are confident your package is correct you can set analyze to false.
+	// "analyze": true,
+	// // Under which Open Source you code has been released. MIT is a good choice.
+}
